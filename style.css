@@ -2,7 +2,7 @@
   --principal-color: #254d32;
   --analog-color: #69B578;
   --complementary-color: #E8AEB7;
-  --base-color: #E8AEB7;
+  --base-color: #dbebe0;
 }
 
 * {
@@ -60,6 +60,7 @@ header{
   font-size: 12px;
   text-align: right;
   line-height: 1.5;
+  color: var(--analog-color);
 }
 .contact a,
 .contact a:hover,
@@ -107,4 +108,5 @@ main{
   border-top-left-radius: 16px;
   position: sticky;
   top: 0;
+  overflow-y: auto;
 }
