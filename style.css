@@ -40,6 +40,30 @@ body{
   color: var(--complementary-color);
 }
 
+.overflowHidden{
+  overflow: hidden;
+}
+
+.overflowAuto{
+  overflow: auto;
+}
+
+a,
+a:hover,
+a:visited,
+a:active{
+  color: unset;
+  text-decoration: none;
+}
+
+.separator{
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin: auto;
+  background-color: var(--principal-color);
+}
+
 /* HEADER */
 header{
   color: var(--analog-color);
@@ -62,12 +86,6 @@ header{
   line-height: 1.5;
   color: var(--analog-color);
 }
-.contact a,
-.contact a:hover,
-.contact a:visited,
-.contact a:active{
-  color: var(--analog-color);
-}
 
 /* PRESENTATION */
 .presentation{
@@ -88,6 +106,7 @@ header{
   padding: 10px 20px;
   text-align: center;
   border-radius: 16px;
+  font-size: 16px;                                              
 }
 .pill-1{
   top: 45px;
@@ -109,4 +128,96 @@ main{
   position: sticky;
   top: 0;
   overflow-y: auto;
+}
+
+main .header{
+  display: flex;
+}
+
+article{
+  padding: 12vh 4vw;
+}
+
+.principalInfo,
+.principalImage{
+  width: 50%;
+}
+
+.principalImage{
+  display: flex;
+  margin: auto;
+}
+
+.principalImage img{
+  max-width: 60%;
+  margin: auto;
+}
+
+.principalInfo h3{
+  font-size: 56px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: black;
+}
+
+.tags{
+  display: flex;
+  width: 100%;
+  margin: 2vh 0;
+}
+
+.tags .tag{
+  margin: 0 10px 0 0;
+  padding: 5px 10px;
+  background-color: var(--analog-color);
+  text-align: center;
+  border-radius: 5px;
+  font-size: 10px;
+  color: var(--principal-color);
+}
+
+.introduction{
+  margin: 3vh 0;
+}
+
+.introduction p{
+  font-size: 14px;
+  margin: 0 0 2vh 0;
+}
+
+.introduction .info{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+  margin-top: 5vh;
+  color: rgb(101, 101, 101);
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.introduction .data{
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.seeImages{
+  background-color: var(--complementary-color);
+  color: var(--base-color);
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 16px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bolder;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+
+.seeImages:focus{
+  border: 1px solid var(--principal-color);
+  color: var(--principal-color);
 }

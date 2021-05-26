@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@200;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Ignacio Cuadros | Portfolio</title>
+  <script src="index.js" defer async></script>
 </head>
 <body>
   <header>
@@ -20,11 +21,67 @@
   </header>
   <section class="presentation">
     <img src="images/ignacio-cuadros-mark.svg" alt="Ignacio Cuadros" class="principal-mark">    
-    <span class="pill-1">UI/UX DESIGNER</span>
-    <span class="pill-2">UI DEVELOPER</span>
+    <h2 class="pill-1">UI/UX DESIGNER</h2>
+    <h2 class="pill-2">UI DEVELOPER</h2>
   </section>
-  <main>
-    
+  <main class="overflowHidden">
+    <!-- ARTICLE Nº 1 -->
+    <article>
+      <div class="header">
+        <div class="principalInfo">
+          <h3 class="titleFontFamily">App de estudios médicos.</h3>
+          <div class="tags">
+            <span class="tag">Diseño de UI</span>
+            <span class="tag">Desarrollo Front End</span>
+          </div>
+          <div class="introduction">
+            <p>Módulo web en portal médico para ser utilizados por pacientes de diferente rango etarios y nacionalidades. El objetivo es la posibilidad de ver, cargar y editar estudios médicos para ser revisados por profesionales de la salud todo en la nube.
+            </p>
+            <p>Mobile First y adaptado para escritorio. Actualmente en beta, ideado en Figma y creado con HTML, SASS, AngularJS y TypeScript.</p>
+            <div class="info">
+              <button class="seeImages">Ver proyecto</button>
+              <div class="data">
+                <span>Año 2021</span>
+                <span>Duración 2 meses</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="principalImage">
+          <img src="images/phr-studies/cover.png" alt="Mockup PHR Studies" > 
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE SEPARATOR -->
+    <hr class="separator">
+    <!-- ARTICLE Nº 2 -->
+    <article>
+      <div class="header">
+        <div class="principalInfo">
+          <h3 class="titleFontFamily">Servicios Financieros web.</h3>
+          <div class="tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Maquetación</span>
+            <span class="tag">Diseño de UI</span>
+          </div>
+          <div class="introduction">
+            <p>Bajo la idea de presentar una nueva marca identitaria de la empresa, se desarrolló la web institucional principal donde además de informar sobre los servicios que otorga se da una marcada idea de moderno y flexible para los tiempo que vienen.
+            </p>
+            <p>Simple y formal. Online desde hace más de 1 año, ideado a partir de la marca y creado con HTML, CSS y JavaScript.</p>
+            <div class="info">
+              <button class="seeImages">Ver proyecto</button>
+              <div class="data">
+                <span>Año 2020</span>
+                <span>Duración 1 mes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="principalImage">
+          <img src="images/financial-solutions/cover.png" alt="Mockup Financial Solutions" style="max-width: 70%;"> 
+        </div>
+      </div>
+    </article>
   </main>
 </body>
 </html>
