@@ -1,0 +1,66 @@
+:root{
+  --principal-color: #254d32;
+  --analog-color: #69B578;
+  --complementary-color: #E8AEB7;
+  --base-color: #f3fff7;
+  --gray: #656565;
+}
+
+* {
+  margin: 0;
+  display: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body{
+  background-color: var(--principal-color);
+}
+
+.titleFontFamily{
+  font-family: 'MuseoModerno', sans-serif;
+}
+
+.lighter-font{
+  font-weight: lighter;
+}
+
+.bolder-font{
+  font-weight: bolder;
+}
+
+.principal-color{
+  color: var(--principal-color);
+}
+
+.analog-color{
+  color: var(--analog-color);
+}
+
+.complementary-color{
+  color: var(--complementary-color);
+}
+
+.overflowHidden{
+  overflow: hidden;
+}
+
+.overflowAuto{
+  overflow: auto;
+}
+
+a,
+a:hover,
+a:visited,
+a:active{
+  color: unset;
+  text-decoration: none;
+}
+
+hr{
+  height: 1px;
+  border: none;
+  width: 90%;
+  margin: auto;
+  background-color: var(--analog-color);
+}

@@ -6,7 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@200;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 1280px)">
+  <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 769px) and (max-width: 1280px)">
+  <link rel="stylesheet" href="./styles/mobile.css" media="(max-width: 768px)">
   <title>Ignacio Cuadros | Portfolio</title>
   <script src="index.js" defer async></script>
 </head>
@@ -14,8 +17,7 @@
   <header>
     <img src="images/ini-mark.svg" alt="Logo de portfolio de Ignacio Cuadros" class="ini-mark">
     <span class="contact bolder-font">
-      works@ignaciocuadros.com
-      <br>
+      <span>works@ignaciocuadros.com</span>
       <a href="https://www.instagram.com/inicuadros/" title="Instagram" target="_blank">@inicuadros</a>
     </span>
   </header>
@@ -24,9 +26,9 @@
     <h2 class="pill-1">UI/UX DESIGNER</h2>
     <h2 class="pill-2">UI DEVELOPER</h2>
   </section>
-  <main class="overflowHidden">
+  <main>
     <!-- ARTICLE Nº 1 -->
-    <article>
+    <article id="article1">
       <div class="header">
         <div class="principalInfo">
           <h3 class="titleFontFamily">App de estudios médicos.</h3>
@@ -39,7 +41,9 @@
             </p>
             <p>Mobile First y adaptado para escritorio. Actualmente en beta, ideado en Figma y creado con HTML, SASS, AngularJS y TypeScript.</p>
             <div class="info">
-              <button class="seeImages">Ver proyecto</button>
+              <!-- Remove empty div when enable button -->
+              <div></div>
+              <!-- <button class="seeImages">Ver completo</button> -->
               <div class="data">
                 <span>Año 2021</span>
                 <span>Duración 2 meses</span>
@@ -48,14 +52,14 @@
           </div>
         </div>
         <div class="principalImage">
-          <img src="images/phr-studies/cover.png" alt="Mockup PHR Studies" > 
+          <img src="images/phr-studies/cover.png" alt="Mockup PHR Studies"> 
         </div>
       </div>
     </article>
     <!-- ARTICLE SEPARATOR -->
-    <hr class="separator">
+    <hr>
     <!-- ARTICLE Nº 2 -->
-    <article>
+    <article id="article2">
       <div class="header">
         <div class="principalInfo">
           <h3 class="titleFontFamily">Servicios Financieros web.</h3>
@@ -69,7 +73,9 @@
             </p>
             <p>Simple y formal. Online desde hace más de 1 año, ideado a partir de la marca y creado con HTML, CSS y JavaScript.</p>
             <div class="info">
-              <button class="seeImages">Ver proyecto</button>
+              <!-- Remove empty div when enable button -->
+              <div></div>
+              <!-- <button class="seeImages">Ver completo</button> -->
               <div class="data">
                 <span>Año 2020</span>
                 <span>Duración 1 mes</span>
@@ -78,7 +84,38 @@
           </div>
         </div>
         <div class="principalImage">
-          <img src="images/financial-solutions/cover.png" alt="Mockup Financial Solutions" style="max-width: 70%;"> 
+          <img src="images/financial-solutions/cover.png" alt="Mockup Financial Solutions"> 
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE SEPARATOR -->
+    <hr>
+    <!-- ARTICLE Nº 3 -->
+    <article id="article3">
+      <div class="header">
+        <div class="principalInfo">
+          <h3 class="titleFontFamily">Módulo web de convenios de prepagas.</h3>
+          <div class="tags">
+            <span class="tag">Diseño de la información</span>
+            <span class="tag">Diseño de UI</span>
+          </div>
+          <div class="introduction">
+            <p>Sección de suma importancia que tiene como objetivo obtener una buena usabilidad ya que es el lugar en el que se define como se factura +50 centro médicos en ámerica latina.
+            </p>
+            <p>Simple y formal. Online desde hace más de 1 año, ideado a partir de la marca y creado con HTML, CSS y JavaScript.</p>
+            <div class="info">
+              <!-- Remove empty div when enable button -->
+              <div></div>
+              <!-- <button class="seeImages">Ver completo</button> -->
+              <div class="data">
+                <span>Año 2020</span>
+                <span>Duración 2/3 mes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="principalImage">
+          <img src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
         </div>
       </div>
     </article>

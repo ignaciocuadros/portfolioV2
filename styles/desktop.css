@@ -1,69 +1,3 @@
-:root{
-  --principal-color: #254d32;
-  --analog-color: #69B578;
-  --complementary-color: #E8AEB7;
-  --base-color: #dbebe0;
-}
-
-* {
-  margin: 0;
-  display: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-}
-
-body{
-  background-color: var(--principal-color);
-}
-
-.titleFontFamily{
-  font-family: 'MuseoModerno', sans-serif;
-}
-
-.lighter-font{
-  font-weight: lighter;
-}
-
-.bolder-font{
-  font-weight: bolder;
-}
-
-.principal-color{
-  color: var(--principal-color);
-}
-
-.analog-color{
-  color: var(--analog-color);
-}
-
-.complementary-color{
-  color: var(--complementary-color);
-}
-
-.overflowHidden{
-  overflow: hidden;
-}
-
-.overflowAuto{
-  overflow: auto;
-}
-
-a,
-a:hover,
-a:visited,
-a:active{
-  color: unset;
-  text-decoration: none;
-}
-
-.separator{
-  height: 1px;
-  border: none;
-  width: 90%;
-  margin: auto;
-  background-color: var(--principal-color);
-}
-
 /* HEADER */
 header{
   color: var(--analog-color);
@@ -85,6 +19,10 @@ header{
   text-align: right;
   line-height: 1.5;
   color: var(--analog-color);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: -1;
 }
 
 /* PRESENTATION */
@@ -94,6 +32,7 @@ header{
   margin: auto;
   position: sticky;
   top: 25vh;
+  z-index: -1;
 }
 .principal-mark{
   width: 100%;
@@ -122,12 +61,8 @@ main{
   background-color: var(--base-color);
   width: 88vw;
   margin-left: auto;
-  height: 80vh;
   display: block;
   border-top-left-radius: 16px;
-  position: sticky;
-  top: 0;
-  overflow-y: auto;
 }
 
 main .header{
@@ -149,12 +84,11 @@ article{
 }
 
 .principalImage img{
-  max-width: 60%;
   margin: auto;
 }
 
 .principalInfo h3{
-  font-size: 56px;
+  font-size: 34px;
   line-height: 1.2;
   text-transform: uppercase;
   color: black;
@@ -178,6 +112,7 @@ article{
 
 .introduction{
   margin: 3vh 0;
+  color: var(--gray);
 }
 
 .introduction p{
@@ -191,7 +126,6 @@ article{
   width: 100%;
   font-size: 10px;
   margin-top: 5vh;
-  color: rgb(101, 101, 101);
   text-transform: uppercase;
   align-items: center;
 }
@@ -203,21 +137,28 @@ article{
 }
 
 .seeImages{
-  background-color: var(--complementary-color);
-  color: var(--base-color);
-  padding: 10px 20px;
+  background-color: var(--base-color);
+  padding: 6px 12px;
   text-align: center;
   border-radius: 16px;
-  font-size: 12px;
+  font-size: 10px;
   outline: none;
-  border: none;
   cursor: pointer;
   font-weight: bolder;
-  border: 1px solid transparent;
   text-transform: uppercase;
+  border: 1px solid var(--principal-color);
+  color: var(--principal-color);
 }
 
 .seeImages:focus{
-  border: 1px solid var(--principal-color);
-  color: var(--principal-color);
+  background-color: #fff;
+}
+
+/* Images sizes */
+#article1 .principalImage img{
+  height: 350px;
+}
+#article2 .principalImage img,
+#article3 .principalImage img{
+  width: 450px;
 }
