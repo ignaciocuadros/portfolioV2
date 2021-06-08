@@ -1,27 +1,24 @@
-//Variables declaration
-const mainDOMElement = document.querySelector("main");
+// window.addEventListener("load", (event) => {
+//   init();
+// }, false);
 
-//Functions declaration
-const checkMainDOMElementPosition = () => {
-  if(mainDOMElement){
-    if(mainDOMElement.getBoundingClientRect().y > 139){
-      mainDOMElement.classList.replace("overflowAuto", "overflowHidden");
-    } else {
-      enableMainScroll();
-    }
-    reExecuteCheck();
-  }
-}
+// function init(){
+//   contactStylesWhenIntersectMain();
+// }
 
-const enableMainScroll = () => {
-  mainDOMElement.classList.replace("overflowHidden", "overflowAuto");
-}
+// const contactElement = document.querySelector(".contact");
+// const mainElement = document.querySelector("main");
 
-const reExecuteCheck = () => {
-  setTimeout(() => {
-    checkMainDOMElementPosition();
-  }, 0);
-}
+// function contactStylesWhenIntersectMain(){
+//   if(contactElement.getBoundingClientRect().bottom >= mainElement.getBoundingClientRect().top){
+//     contactElement.classList.add('highlight');
+//   } else {
+//     recallFunction();
+//   }
+// }
 
-//Execution 
-checkMainDOMElementPosition();
+// function recallFunction(){
+//   setTimeout(() => {
+//     contactStylesWhenIntersectMain();
+//   }, 250);
+// }
