@@ -2,8 +2,9 @@
   --principal-color: #254d32;
   --analog-color: #69B578;
   --complementary-color: #E8AEB7;
-  --base-color: #f3fff7;
+  --base-color: #fff;
   --gray: #656565;
+  --light-gray: #C1C1C1;
 }
 
 * {
@@ -60,7 +61,19 @@ a:active{
 hr{
   height: 1px;
   border: none;
-  width: 90%;
-  margin: auto;
-  background-color: var(--analog-color);
+  margin: auto 4vw;
+  background-color: var(--light-gray);
+}
+
+.marginScrollbar{
+  padding-right: 18px;
+}
+
+.arrow{
+  font-size: 18px;
+  color: var(--gray);
+  background: #fff;
+  padding: 12px 16px;
+  /* box-shadow: 0 0 8px #fff; */
+  border-radius: 28px;
 }

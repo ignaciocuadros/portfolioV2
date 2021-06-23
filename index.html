@@ -7,8 +7,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@200;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 1280px)">
-  <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 769px) and (max-width: 1280px)">
+  <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 769px) ">
+  <!-- <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 769px) and (max-width: 1280px)"> -->
   <link rel="stylesheet" href="./styles/mobile.css" media="(max-width: 768px)">
   <title>Ignacio Cuadros | Portfolio</title>
   <script src="index.js" defer async></script>
@@ -16,43 +16,39 @@
 <body>
   <header>
     <img src="images/ini-mark.svg" alt="Logo de portfolio de Ignacio Cuadros" class="ini-mark">
-    <span class="contact bolder-font">
-      <span>works@ignaciocuadros.com</span>
-      <a href="https://www.instagram.com/inicuadros/" title="Instagram" target="_blank">@inicuadros</a>
-    </span>
+    <address class="contact bolder-font">
+      <span class="tag">works@ignaciocuadros.com</span>
+      <a href="https://www.instagram.com/inicuadros/" title="Instagram" class="tag" target="_blank">@inicuadros</a>
+    </address>
   </header>
   <section class="presentation">
     <img src="images/ignacio-cuadros-mark.svg" alt="Ignacio Cuadros" class="principal-mark">    
     <h2 class="pill-1">UI/UX DESIGNER</h2>
     <h2 class="pill-2">UI DEVELOPER</h2>
   </section>
-  <main>
+  <main class="marginScrollbar">
     <!-- ARTICLE Nº 1 -->
     <article id="article1">
+      <div class="data">
+        <span>Año 2021</span>
+        <span>Equipo Omnia Salud</span>
+        <span>Duración 2 meses</span>
+      </div>
       <div class="header">
         <div class="principalInfo">
-          <h3 class="titleFontFamily">App de estudios médicos.</h3>
-          <div class="tags">
-            <span class="tag">Diseño de UI</span>
-            <span class="tag">Desarrollo Front End</span>
+          <div class="title">
+            <h3 class="titleFontFamily">Aplicación de estudios médicos para pacientes.</h3>
           </div>
           <div class="introduction">
             <p>Módulo web en portal médico para ser utilizados por pacientes de diferente rango etarios y nacionalidades. El objetivo es la posibilidad de ver, cargar y editar estudios médicos para ser revisados por profesionales de la salud todo en la nube.
             </p>
             <p>Mobile First y adaptado para escritorio. Actualmente en beta, ideado en Figma y creado con HTML, SASS, AngularJS y TypeScript.</p>
-            <div class="info">
-              <!-- Remove empty div when enable button -->
-              <div></div>
-              <!-- <button class="seeImages">Ver completo</button> -->
-              <div class="data">
-                <span>Año 2021</span>
-                <span>Duración 2 meses</span>
-              </div>
-            </div>
           </div>
         </div>
         <div class="principalImage">
-          <img src="images/phr-studies/cover.png" alt="Mockup PHR Studies"> 
+          <img src="images/phr-studies/wireframe.png" alt="Wireframe PHR Studies">
+          <span class="arrow">&#x279C;</span> 
+          <img src="images/phr-studies/mockup-mobile.png" alt="Mockup PHR Studies"> 
         </div>
       </div>
     </article>
@@ -60,31 +56,26 @@
     <hr>
     <!-- ARTICLE Nº 2 -->
     <article id="article2">
+      <div class="data">
+        <span>Año 2020</span>
+        <span>Freelance</span>
+        <span>Duración 1 mes</span>
+      </div>
       <div class="header">
         <div class="principalInfo">
-          <h3 class="titleFontFamily">Servicios Financieros web.</h3>
-          <div class="tags">
-            <span class="tag">Branding</span>
-            <span class="tag">Maquetación</span>
-            <span class="tag">Diseño de UI</span>
+          <div class="title">
+            <h3 class="titleFontFamily">Web para empresa de Servicios Financieros.</h3>
           </div>
           <div class="introduction">
             <p>Bajo la idea de presentar una nueva marca identitaria de la empresa, se desarrolló la web institucional principal donde además de informar sobre los servicios que otorga se da una marcada idea de moderno y flexible para los tiempo que vienen.
             </p>
             <p>Simple y formal. Online desde hace más de 1 año, ideado a partir de la marca y creado con HTML, CSS y JavaScript.</p>
-            <div class="info">
-              <!-- Remove empty div when enable button -->
-              <div></div>
-              <!-- <button class="seeImages">Ver completo</button> -->
-              <div class="data">
-                <span>Año 2020</span>
-                <span>Duración 1 mes</span>
-              </div>
-            </div>
           </div>
         </div>
         <div class="principalImage">
+          <img src="images/financial-solutions/principal-logo.svg" alt="Mockup Financial Solutions" width="100"> 
           <img src="images/financial-solutions/cover.png" alt="Mockup Financial Solutions"> 
+          <img src="images/financial-solutions/mockup-mobile.png" alt="Mockup Financial Solutions"> 
         </div>
       </div>
     </article>
@@ -92,26 +83,68 @@
     <hr>
     <!-- ARTICLE Nº 3 -->
     <article id="article3">
+      <div class="data">
+        <span>Año 2021</span>
+        <span>Equipo Omnia Salud</span>
+        <span>Duración 2/3 mes</span>
+      </div>
       <div class="header">
         <div class="principalInfo">
-          <h3 class="titleFontFamily">Módulo web de convenios de prepagas.</h3>
-          <div class="tags">
-            <span class="tag">Diseño de la información</span>
-            <span class="tag">Diseño de UI</span>
+          <div class="title">
+            <h3 class="titleFontFamily">Módulo de app web de convenios de prepagas.</h3>
           </div>
           <div class="introduction">
             <p>Sección de suma importancia que tiene como objetivo obtener una buena usabilidad ya que es el lugar en el que se define como se factura +50 centro médicos en ámerica latina.
             </p>
             <p>Simple y formal. Online desde hace más de 1 año, ideado a partir de la marca y creado con HTML, CSS y JavaScript.</p>
-            <div class="info">
-              <!-- Remove empty div when enable button -->
-              <div></div>
-              <!-- <button class="seeImages">Ver completo</button> -->
-              <div class="data">
-                <span>Año 2020</span>
-                <span>Duración 2/3 mes</span>
-              </div>
-            </div>
+          </div>
+        </div>
+        <div class="principalImage">
+          <img src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE SEPARATOR -->
+    <hr>
+    <!-- ARTICLE Nº 4 -->
+    <article id="article4">
+      <div class="data">
+        <span>Años 2018/19/20/21</span>
+        <span>Freelance</span>
+        <span>Máx 2 meses cada uno</span>
+      </div>
+      <div class="header">
+        <div class="principalInfo">
+          <div class="title">
+            <h3 class="titleFontFamily">Desarrollos de marcas e identidades.</h3>
+          </div>
+          <div class="introduction">
+            <p>Selección de identidades realizadas a lo largo de los años para empresas, startups y pymes de rubros diversos. Siempre con el objetivo de impactar visualmente como tambien lograr añadir valor agregado desde un análisis del mismo sin resignar la simplicidad y entendimiento universal.
+            </p>
+          </div>
+        </div>
+        <div class="principalImage">
+          <img src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
+        </div>
+      </div>
+    </article>
+    <!-- ARTICLE SEPARATOR -->
+    <hr>
+    <!-- ARTICLE Nº 5 -->
+    <article id="article5">
+      <div class="data">
+        <span>Años 2019/20</span>
+        <span>Equipo Omnia salud</span>
+        <span>3 meses</span>
+      </div>
+      <div class="header">
+        <div class="principalInfo">
+          <div class="title">
+            <h3 class="titleFontFamily">Informe PDF de cirugía gastroenterológica.</h3>
+          </div>
+          <div class="introduction">
+            <p>informes creados a partir de intervenciones quirurgicas en formato pdf para entregar resultados a +1k personas. Se realizó el rediseño tanto del cliente como del informe producto de la primera iteración para poder cumplir con las exigencias de los doctores como tambien para un posible entendimiento por parte del paciente.
+            </p>
           </div>
         </div>
         <div class="principalImage">
