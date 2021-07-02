@@ -74,6 +74,20 @@ hr{
   color: var(--gray);
   background: #fff;
   padding: 12px 16px;
-  /* box-shadow: 0 0 8px #fff; */
   border-radius: 28px;
+}
+
+.principalImage{
+  display: grid;
+  grid-template-columns: 1.5vw repeat(8, 10vw) 1.5vw;
+  grid-template-rows: 23px repeat(4, 12vh) 23px;
+  background: radial-gradient(#000 -1px, transparent 1px);
+  background-size: 23px 23px;
+  align-items: center;
+  justify-items: center;
+}
+
+.principalImage img{
+  max-height: 100%;
+  max-width: 100%;
 }

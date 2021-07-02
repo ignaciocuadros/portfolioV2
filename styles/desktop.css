@@ -75,7 +75,7 @@ article{
   padding: 4vh 4vw 20vh;
 }
 
-.principalInfo .title,
+.principalInfo h3,
 .principalInfo .introduction
 .principalImage{
   width: 50%;
@@ -87,19 +87,57 @@ article{
 }
 
 .principalImage{
-  display: flex;
-  justify-content: space-between;
   background: radial-gradient(#000 -1px, transparent 1px);
   background-size: 23px 23px;
-  align-items: center;
-  padding: 33px 35px 24px;
+  width: 83vw;
+  margin-left: -1vw;
 }
 
-.principalImage img{
-  display: block;
-  max-height: 370px;
-  width: auto;
-  height: auto;
+.projectData{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 10px;
+  color: var(--light-gray);
+  text-transform: uppercase;
+}
+
+/* ARTICLE 1 IMAGES */
+#article1 .principalImage img:nth-child(1){
+  grid-area: 2 / 2 / 6 / 4;
+}
+#article1 .principalImage img:nth-child(2){
+  grid-area: 2 / 4 / 6 / 8;
+}
+#article1 .principalImage div:last-child{
+  grid-area: 3 / 8 / 5 / 10;
+}
+
+/* ARTICLE 2 IMAGES */
+#article2 .principalImage img:nth-child(1){
+  grid-area: 2 / 2 / 3 / 3;
+}
+#article2 .principalImage img:nth-child(2){
+  grid-area: 2 / 3 / 3 / 4;
+  padding: 10px 15px;
+}
+#article2 .principalImage img:nth-child(3){
+  grid-area: 3 / 2 / 4 / 4;
+  background-color: #fff;
+}
+#article2 .principalImage img:nth-child(4){
+  grid-area: 1 / 4 / 5 / 9;
+}
+#article2 .principalImage img:nth-child(5){
+  grid-area: 3 / 7 / 9 / 9;
+  width: 80%;
+}
+#article2 .principalImage div:last-child{
+  grid-area: 6 / 2 / 7 / 10;
+  flex-direction: row;
 }
 
 .principalInfo h3{
