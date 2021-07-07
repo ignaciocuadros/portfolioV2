@@ -1,3 +1,11 @@
+.showMobile{
+  display: none;
+}
+
+.showDesktop{
+  display: initial;
+}
+
 /* HEADER */
 header{
   color: var(--analog-color);
@@ -87,10 +95,10 @@ article{
 }
 
 .principalImage{
-  background: radial-gradient(#000 -1px, transparent 1px);
-  background-size: 23px 23px;
   width: 83vw;
   margin-left: -1vw;
+  grid-template-columns: 1.5vw repeat(8, 10vw) 1.5vw;
+  grid-template-rows: 23px repeat(4, 12vh) 23px;
 }
 
 .projectData{
@@ -173,12 +181,8 @@ article{
   align-items: center;
 }
 
-.data{
-  display: flex;
-  justify-content: space-between;
-  font-size: 8px;
-  text-transform: uppercase;
-  color: var(--light-gray);
+.marginScrollbarDesktop{
+  padding-right: 18px;
 }
 
 .seeImages{
