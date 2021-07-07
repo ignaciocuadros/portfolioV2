@@ -173,7 +173,7 @@ article{
 }
 
 .principalImage img{
-  max-height: 80%;
+  max-height: 280px;
   max-width: fit-content;
   padding: 0 15px;
 }
