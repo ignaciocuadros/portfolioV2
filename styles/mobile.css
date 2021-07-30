@@ -75,8 +75,7 @@ main .header{
 }
 
 article{
-  padding: 3vh 0 3vh 4vw;
-  overflow: hidden;
+  padding: 3vh 0;
 }
 
 .projectHeader,
@@ -173,6 +172,14 @@ article{
 }
 
 .principalImage img{
-  max-height: 280px;
-  max-width: fit-content;
+  max-width: 90%;
+  margin: 5vh 0;
+}
+
+.mobile-column{
+  flex-direction: column;
+}
+
+img.mobile-width-70{
+  max-width: 70%;
 }
