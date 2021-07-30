@@ -18,6 +18,10 @@ body{
   background-color: var(--principal-color);
 }
 
+.flex{
+  display: flex;
+}
+
 .titleFontFamily{
   font-family: 'MuseoModerno', sans-serif;
 }
@@ -61,7 +65,7 @@ a:active{
 hr{
   height: 1px;
   border: none;
-  margin: auto 4vw;
+  margin: 8vh 4vw;
   background-color: var(--light-gray);
 }
 
@@ -74,19 +78,37 @@ hr{
 }
 
 .principalImage{
-  display: grid;
+  min-height: 55vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   background: radial-gradient(#000 -1px, transparent 1px);
   background-size: 23px 23px;
-  align-items: center;
-  justify-items: center;
 }
 
 .principalImage img{
-  max-height: 100%;
-  max-width: 100%;
+  margin: 5vh;
 }
 
-.data{
+.verticalImage{
+  max-height: 45vh;
+}
+
+.horizontalImage{
+  max-width: calc(45% - 10vh);
+}
+
+.imageShadow{
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
+}
+
+.imageBorderRadius{
+  border-radius: 5px;
+}
+
+.projectData{
   display: flex;
   justify-content: space-between;
   font-size: 8px;

@@ -79,17 +79,17 @@ article{
   overflow: hidden;
 }
 
-.principalInfo,
+.projectHeader,
 .principalImage{
   width: 100%;
   margin-top: 5vh;
 }
 
-.principalInfo{
+.projectHeader{
   padding-right: 4vw;
 }
 
-.principalInfo h3{
+.projectHeader h3{
   font-size: 22px;
   line-height: 1.2;
   text-transform: uppercase;
@@ -133,7 +133,7 @@ article{
   flex-direction: column;
 }
 
-.introduction .data{
+.introduction .projectData{
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -158,7 +158,7 @@ article{
   background-color: #fff;
 }
 
-.data{
+.projectData{
   justify-content: space-around;
 }
 
@@ -175,38 +175,4 @@ article{
 .principalImage img{
   max-height: 280px;
   max-width: fit-content;
-  padding: 0 15px;
-}
-
-/* ARTICLE 1 IMAGES */
-#article1 .principalImage img:nth-child(1){
-  grid-row-start: 1;
-  grid-column-start: 3;
-}
-#article1 .principalImage img:nth-child(2){
-  grid-row-start: 1;
-  grid-column-start: 8;
-}
-
-/* ARTICLE 2 IMAGES */
-#article2 .principalImage img:nth-child(1){
-  grid-row-start: 1;
-  grid-column-start: 1;
-  width: 45vw;
-}
-#article2 .principalImage img:nth-child(2){
-  grid-row-start: 1;
-  grid-column-start: 2;
-  width: 36vw;
-}
-#article2 .principalImage img:nth-child(3){
-  grid-row-start: 1;
-  grid-column-start: 3;
-  width: 73vw;
-  background-color: #fff;
-}
-#article2 .principalImage img:nth-child(4){
-  grid-row-start: 1;
-  grid-column-start: 4;
-  width: 91vw;
 }
