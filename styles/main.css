@@ -22,6 +22,18 @@ body{
   display: flex;
 }
 
+.column{
+  flex-direction: column;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
 .titleFontFamily{
   font-family: 'MuseoModerno', sans-serif;
 }
@@ -54,6 +66,10 @@ body{
   overflow: auto;
 }
 
+.all-width-45{
+  max-width: 45%;
+}
+
 a,
 a:hover,
 a:visited,
@@ -82,7 +98,7 @@ hr{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   background: radial-gradient(#000 -1px, transparent 1px);
   background-size: 23px 23px;
@@ -100,6 +116,10 @@ hr{
   max-width: calc(45% - 10vh);
 }
 
+.fullImage{
+  max-width: 100%;
+}
+
 .imageShadow{
   box-shadow: 0px 0px 8px rgb(0 0 0 / 20%);
 }
@@ -114,4 +134,9 @@ hr{
   font-size: 8px;
   text-transform: uppercase;
   color: var(--light-gray);
+}
+
+.principalImage .projectData{
+  color: #000;
+  margin-top: 20px;
 }
