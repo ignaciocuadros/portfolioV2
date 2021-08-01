@@ -98,14 +98,15 @@ hr{
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   background: radial-gradient(#000 -1px, transparent 1px);
   background-size: 23px 23px;
+  gap: 5vh 5vw;
 }
 
-.principalImage img{
-  margin: 5vh;
+.min-gap{
+  gap: 1vh 1vw;
 }
 
 .verticalImage{
@@ -139,4 +140,14 @@ hr{
 .principalImage .projectData{
   color: #000;
   margin-top: 20px;
+}
+
+.align-start{
+  align-items: flex-start;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
 }

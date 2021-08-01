@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@200;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=MuseoModerno:wght@200;700&display=swap" rel="stylesheet" defer>
   <link rel="stylesheet" href="./styles/main.css">
   <link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 769px) ">
   <!-- <link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 769px) and (max-width: 1280px)"> -->
@@ -26,7 +26,7 @@
     <h2 class="pill-1">UI/UX DESIGNER</h2>
     <h2 class="pill-2">UI DEVELOPER</h2>
   </section>
-  <main class="marginScrollbarDesktop">
+  <main>
     <article>
       <div class="projectData">
         <span>Año 2021</span>
@@ -41,13 +41,15 @@
         </div>
       </div>
       <div class="principalImage">
-        <img class="verticalImage" src="images/phr-studies/wireframe.png" alt="Wireframe PHR Studies">
-        <div class="flex">
-          <img class="verticalImage" src="images/phr-studies/mockup-mobile.png" alt="Principal screen of PHR Studies Mobile">
-          <img class="verticalImage" src="images/phr-studies/live-mockup.gif" alt="Gif Mockup mobile PHR Studies">
+        <img loading="lazy" src="images/phr-studies/wireframe.png" alt="Wireframe PHR Studies" height="351" width="330">
+        <div class="flex min-gap">
+          <img loading="lazy" src="images/phr-studies/mockup-mobile.png" alt="Principal screen of PHR Studies Mobile" height="370" width="190" class="showDesktop">
+          <video width="190" height="370" autoplay muted loop>
+            <source src="images/phr-studies/live-mockup.webm" type="video/webm">
+          </video>
         </div>
-        <img class="horizontalImage imageShadow imageBorderRadius" src="images/phr-studies/mockup-login-desktop.png" alt="Login screen of PHR Studies Desktop">
-        <img class="horizontalImage imageShadow imageBorderRadius" src="images/phr-studies/mockup-desktop.png" alt="Principal screen of PHR Studies Desktop">
+        <img loading="lazy" class="imageShadow imageBorderRadius" src="images/phr-studies/mockup-login-desktop.png" alt="Login screen of PHR Studies Desktop" width="455" height="260">
+        <img loading="lazy" class="imageShadow imageBorderRadius" src="images/phr-studies/mockup-desktop.png" alt="Principal screen of PHR Studies Desktop" width="455" height="260">
       </div>
     </article>
     <hr>
@@ -65,17 +67,17 @@
           <p>Centrado en diseño de la información. Actualmente online en producción, ideado a partir de sección existente, rediseñado junto al feedback y creado con HTML, CSS, Angular, TypeScript.</p>
         </div>
       </div>
-      <div class="principalImage">
-        <div class="all-width-45 flex column align-center">
+      <div class="principalImage align-start-desktop mobile-column">
+        <div class="desktop-width-45 flex column align-center">
           <span class="projectData">Versión Anterior</span>
-          <img class="fullImage imageShadow imageBorderRadius" style="margin-top: 10px" src="images/deals-omnia/before.png" alt="Before Omnia Deals">
+          <img loading="lazy" class="imageShadow imageBorderRadius" style="margin-top: 10px" src="images/deals-omnia/before.png" alt="Before Omnia Deals" width="455" height="550">
         </div>
-        <div class="all-width-45 flex column align-center">
+        <div class="desktop-width-45 flex column align-center">
           <span class="projectData">Versión Rediseñada</span>
-          <img class="fullImage imageShadow imageBorderRadius" style="margin-top: 10px" src="images/deals-omnia/after.png" alt="After Omnia Deals">
+          <img loading="lazy" class="imageShadow imageBorderRadius" style="margin-top: 10px" src="images/deals-omnia/after.png" alt="After Omnia Deals" width="455" height="333">
         </div>
-        <img class="horizontalImage imageShadow imageBorderRadius" src="images/deals-omnia/mockup-editing.png" alt="Mockup browser Omnia Deals editing">
-        <img class="horizontalImage imageShadow imageBorderRadius" src="images/deals-omnia/mockup-modal.png" alt="Mockup browser Omnia Deals modal">
+        <img loading="lazy" class="imageShadow imageBorderRadius" src="images/deals-omnia/mockup-editing.png" alt="Mockup browser Omnia Deals editing" width="455" height="323">
+        <img loading="lazy" class="imageShadow imageBorderRadius" src="images/deals-omnia/mockup-modal.png" alt="Mockup browser Omnia Deals modal" width="455" height="323">
       </div>
     </article>
     <hr>
@@ -93,8 +95,11 @@
         </div>
       </div>
       <div class="principalImage">
-        <img class="horizontalImage mobile-width-70" src="images/financial-solutions/logo-comparation-01.png" alt="Mockup Financial Solutions">
-        <img class="horizontalImage imageShadow imageBorderRadius" src="images/financial-solutions/cover.gif" alt="Mockup Financial Solutions"> 
+        <img loading="lazy" src="images/financial-solutions/logo-comparation-01.png" alt="Mockup Financial Solutions" width="300" height="154">
+        <img loading="lazy" src="images/financial-solutions/mockup-mobile.png" alt="Mockup Mobile Financial Solutions" height="300" width="148"> 
+        <video width="400" height="286" autoplay muted loop>
+          <source src="images/financial-solutions/live-mockup.webm" type="video/webm">
+        </video>
       </div>
     </article>
     <!-- ARTICLE SEPARATOR -->
@@ -115,7 +120,7 @@
           </div>
         </div>
         <div class="principalImage">
-          <img src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
+          <img loading="lazy" src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
         </div>
       </div>
     </article> -->
@@ -137,7 +142,7 @@
           </div>
         </div>
         <div class="principalImage">
-          <img src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
+          <img loading="lazy" src="images/deals-omnia/cover.png" alt="Mockup Omnia Deals"> 
         </div>
       </div>
     </article> -->

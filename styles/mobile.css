@@ -162,24 +162,9 @@ article{
 }
 
 .principalImage{
-  grid-template-rows: 45vh;
-  margin: 4vh auto 0;
-  overflow-x: auto;
-}
-
-#article2 .principalImage{
-  grid-template-rows: 45vh;
-}
-
-.principalImage img{
-  max-width: 90%;
-  margin: 5vh 0;
+  padding: 0 3vw;
 }
 
 .mobile-column{
   flex-direction: column;
-}
-
-img.mobile-width-70{
-  max-width: 70%;
 }
