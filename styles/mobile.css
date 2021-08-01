@@ -16,12 +16,10 @@ header{
   padding: 5vw;
   position: absolute;
   top: 0;
-  height: 100vh;
+  height: 100%;
   flex-direction: column;
 }
-.ini-mark{
-  width: 20px;
-}
+
 .contact{
   font-size: 12px;
   text-align: center;
@@ -38,9 +36,7 @@ header{
   margin: auto;
   display: flex;
 }
-.principal-mark{
-  width: 100%;
-}
+
 .pill-1,
 .pill-2{
   position: absolute;

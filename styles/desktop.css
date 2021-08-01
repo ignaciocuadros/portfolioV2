@@ -27,9 +27,7 @@ header{
   top: 0;
   left: 0;
 }
-.ini-mark{
-  width: 20px;
-}
+
 address{
   text-align: right;
   line-height: 1.5;
@@ -51,9 +49,7 @@ address{
   left: calc(50% - 400px);
   z-index: -1;
 }
-.principal-mark{
-  width: 100%;
-}
+
 .pill-1,
 .pill-2{
   position: absolute;
