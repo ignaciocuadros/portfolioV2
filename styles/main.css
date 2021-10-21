@@ -151,3 +151,9 @@ video {
   max-width: 100%;
   height: auto;
 }
+
+.scroll-action {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+}
